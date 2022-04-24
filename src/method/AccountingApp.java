@@ -16,7 +16,6 @@ public class AccountingApp {
 	}
 	
 	public static void main(String[] args) {
-		
 		System.out.println("Value of supply : " + valueOfSupply);
 		System.out.println("VAT : " + getVAT());
 		System.out.println("Total : " + getTotal());
