@@ -104,6 +104,64 @@ static은 클래스에 고정된 멤버로서 클래스 로더가 클래스를 �
 인터페이스를 사용한다.
 ```
 
+<br>
+
+### Exception
+```
+프로그램 실행 시 아래와 같은 다양한 오류가 발생할 수 있다.
+- 파일을 읽는 프로그램을 실행시켰으나 파일을 찾을 수 없는 경우
+- 문자열을 숫자로 변환하는 프로그램을 실행했으나 숫자로 변환할 수 없는 문자열인 경우
+- 배열의 범위를 벗어나는 경우
+```
+
+<br>
+
+```
+public class trycatchTest {
+ 
+    public static void main(String[] args) {
+        // try : 안에 있는 코드들이 에러가 발생하는 경우 catch문으로 전달합니다.
+        try {
+            int [] num = new int[3];
+        
+            System.out.println("num 배열의 최대 길이는 3입니다.");
+        
+            num[4] = 0;
+            System.out.println("num[4] 에 값을 입력했습니다.");
+            
+        // catch : try에서 발생한 예외처리를 진행합니다.
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("배열 길이가 맞지 않습니다.");
+            
+        // finally : 예외처리가 발생여부를 떠나 무조건 실행하도록 하는 구문
+        } finally {
+            System.out.println("배열을 다시 선언합니다");
+            int [] num = new int[5];
+            
+            num[4] = 0;
+            
+            System.out.println(num[4]);
+        }
+        
+        System.out.println("프로그램을 종료합니다");
+    }
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
