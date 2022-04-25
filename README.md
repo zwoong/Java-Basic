@@ -120,6 +120,7 @@ static은 클래스에 고정된 멤버로서 클래스 로더가 클래스를 �
 public class trycatchTest {
  
     public static void main(String[] args) {
+    
         // try : 안에 있는 코드들이 에러가 발생하는 경우 catch문으로 전달합니다.
         try {
             int [] num = new int[3];
